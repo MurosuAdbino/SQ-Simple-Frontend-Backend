@@ -49,6 +49,32 @@ npm run start
 | `start`                   | Runs full build and runs node on dist/server.js. Can be invoked with `npm start`                  |
 | `start-dev`                   | Development Enviroment nodemon  |
 
+#### 🎇 Endpoint API:
+**GET**
+`http://localhost:{{port}}/books/{{bookId}}`
+
+**POST**
+`http://localhost:{{port}}/books`
+
+**PUT**
+`http://localhost:{{port}}/books/{{bookId}}`
+
+**Delete**
+`http://localhost:{{port}}/books/{{bookId}}`
+
+Body : 
+```json
+{
+    "name": "{{newName}}",
+    "year": {{newYear}},
+    "author": "{{newAuthor}}",
+    "summary": "{{newSummary}}",
+    "publisher": "{{newPublisher}}",
+    "pageCount": {{newPageCount}},
+    "readPage": {{newReadPage}},
+    "reading": {{newReading}}
+}
+```
 
 #### SQ
 https://github.com/MurosuAdbino/SQ-Simple-Frontend-Backend/issues
